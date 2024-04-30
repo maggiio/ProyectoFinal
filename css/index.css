@@ -13,11 +13,12 @@
 /* -------------------------------------------- Nav ----------------------------------------------- */
 
 .elfsight-app-4f39742f-9a52-49b3-baec-555a75628521 {
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 body {
     overflow-y: auto;
+    background-color: rgb(246, 246, 246);
 }
 
 nav {
@@ -195,6 +196,18 @@ td h3 {
 }
 #phone_nav {
     display: none;
+}
+.box_container {
+    display: flex;
+    justify-content: center;
+}
+.small_box {
+    width: 90vw;
+    height: 30vh;
+    flex: 1;
+    background-color: white;
+    padding: 2vw;
+    margin-top: 5vh;
 }
 
 
