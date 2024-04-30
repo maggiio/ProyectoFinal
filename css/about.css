@@ -5,19 +5,14 @@
     font-family: Arial, Helvetica, sans-serif;
     color: black; 
     text-decoration: none;
-    overflow-x: hidden;  
+    overflow-x: hidden;
     scroll-behavior: smooth;
-    /* overflow: hidden;  */
 }
 
 /* -------------------------------------------- Nav ----------------------------------------------- */
 
-.elfsight-app-4f39742f-9a52-49b3-baec-555a75628521 {
-    overflow: hidden;
-}
-
 body {
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 nav {
@@ -26,8 +21,8 @@ nav {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
+    box-shadow: -1px 13px 55px -4px rgba(0,0,0,0.39);
 }
-
 #nav_btn_container {
     flex: 2;
 }
@@ -105,90 +100,12 @@ li .login_btn {
     height: 90vh;
     width: 100vw;
     /* background-color: rgb(255, 222, 222); */
-    background-image: url(/img/woman-working-on-code-in-office.avif);
+    /* background-image: url(/img/woman-working-on-code-in-office.avif); */
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(0.4); 
     z-index: 1;
     
-}
-
-#download_btn {
-    background-color: brown;
-    padding: 1em;
-    border-radius: 10px;
-    color: white;
-    font-size: large;
-    font-weight: 700;
-}
-#main_title h1 {
-    font-size: 50pt;
-    margin-bottom: 1vh;
-    color: white;
-    width: 90vw;
-}
-#main_title p {
-    font-size: 16pt;
-    margin-bottom: 5vh;
-    color: white;
-    width: 80vw;
-}
-#main_title {
-    margin-left: 5vw;
-    position: absolute;
-    z-index: 1;
-    overflow: visible;
-    margin-top: 25vh;
-    
-}
-#main_title h1 span  {
-    color: rgb(255, 0, 0);
-}
-
-#users {
-    width: 80vw;
-    height: 60vh;
-    margin-left: 10vw;
-    background-color: rgba(0, 0, 0, 0.804);
-    border-radius: 10px;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-td {
-    width: 20vw;
-    height: 6.4vh;
-    text-align: center;
-    color: white;
-    font-weight: 700;
-}
-td p {
-    color: white;
-}
-td h2 {
-    color: white;
-}
-td h3 {
-    color: white;
-}
-
-/* --------------------------------------- SECTION 1 --------------------------- */
-#section_1 {
-    height: 100vh;
-    width: 100vw;
-}
-.section1_h3 {
-    margin-left: 10vw;
-}
-.section1_text {
-    margin-top: 5vh;
-    margin-left: 10vw;
-    margin-bottom: 5vh;
-}
-#section_1 h2 {
-    text-align: center;
-    font-size: 25pt;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
 }
 #nav_phone_btn {
     display: none;
@@ -196,6 +113,86 @@ td h3 {
 #phone_nav {
     display: none;
 }
+article {
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+}
+section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+    overflow: hidden;
+}
+section div {
+    width: 100vw;
+    height: 40vh;
+    border-right: 1px solid black;
+    overflow: hidden;
+}
+header {
+    width: 100vw;
+    height: 40vh;
+}
+section div p {
+    padding: 3vw;
+    font-size: 15pt;
+    letter-spacing: 1px;
+}
+article p {
+    padding: 3vw;
+    font-size: 15pt;
+    letter-spacing: 1px;
+}
+section div h3 {
+    margin-left: 3vw;
+    margin-top: 3vw;
+    font-size: 20pt;
+}
+article h3 {
+    margin-left: 3vw;
+    margin-top: 3vw;
+    font-size: 20pt;
+}
+header h1 {
+    letter-spacing: 3px;
+    padding: 5vw;
+    font-size: 30pt;
+}
+article img {
+    margin-left: 5vw;
+}
+section > div > img {
+    margin-left: 3vw;
+    width: 42vw;
+}
+.tile {
+    width: 100vw;
+    height: 45vh;
+}
+.tile_owners {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.tile_owners div {
+    width: 100%;
+    height: 50vh;
+    flex: 1;
+}
+.tile_owners div img {
+    width: 20vw;
+    height: 20vw;
+    margin-left: 2vw;
+    border-radius: 10em;
+}
+.tile iframe {
+    margin: 2vw;
+}
+
 
 
 /* ------------------------------------------------- Media query phone ----------------------------------- */
@@ -216,7 +213,7 @@ td h3 {
     #nav_butger_hitbox:focus #phone_nav  {
         display: block;
         background-color: rgb(27, 27, 27);
-        width: 50vw;
+        width: 100vw;
         height: 30em;
         margin-top: 5em;
         position: fixed;
@@ -231,7 +228,65 @@ td h3 {
     #nav_butger_hitbox {
         flex: 3;
     }
-    
+    article {
+        width: 100vw;
+        height: 40vh;
+        overflow: hidden;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5vh;
+        overflow: hidden;
+    }
+    section div {
+        width: 100vw;
+        height: 40vh;
+        border-right: 0px solid black;
+    }
+
+    header {
+        width: 100vw;
+        height: 40vh;
+    }
+    section div p {
+        padding: 3vw;
+        font-size: 12pt;
+        letter-spacing: 1px;
+    }
+    article p {
+        padding: 3vw;
+        font-size: 12pt;
+        letter-spacing: 1px;
+    }
+    section div h3 {
+        margin-left: 3vw;
+        margin-top: 3vw;
+        font-size: 20pt;
+    }
+    article h3 {
+        margin-left: 3vw;
+        margin-top: 3vw;
+        font-size: 20pt;
+    }
+    header h1 {
+        letter-spacing: 3px;
+        padding: 5vw;
+        font-size: 30pt;
+    }
+    article img {
+        display: none;
+    }
+    section > div > img {
+        display: none;
+    }
+    .tile {
+        width: 100vw;
+        height: 40vh;
+    }
+    .tile iframe {
+        margin: 2vw;
+    }
     
   }
   
