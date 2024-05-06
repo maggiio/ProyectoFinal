@@ -5,19 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
     color: black; 
     text-decoration: none;
-    overflow-x: hidden;  
     scroll-behavior: smooth;
-    /* overflow: hidden;  */
+    /* overflow: hidden;   */
 }
 
 /* -------------------------------------------- Nav ----------------------------------------------- */
 
-.elfsight-app-4f39742f-9a52-49b3-baec-555a75628521 {
-    overflow: hidden; 
-}
-
 body {
     overflow-y: auto;
+    overflow-x: hidden;
     background-color: rgb(246, 246, 246);
 }
 
@@ -226,17 +222,6 @@ td h3 {
         margin-right: 9vw;  
     }
    
-    #nav_butger_hitbox:focus #phone_nav  {
-        display: block;
-        background-color: rgb(27, 27, 27);
-        width: 50vw;
-        height: 30em;
-        margin-top: 5em;
-        position: fixed;
-        z-index: 2;
-        margin-right: 100vw;
-        
-    }
     #nav_logo_container {
         flex: 1;
     }
@@ -244,7 +229,15 @@ td h3 {
     #nav_butger_hitbox {
         flex: 3;
     }
-    
+    #main_title h1 {
+        font-size: 35pt;
+        margin-bottom: 1vh;
+        color: white;
+        width: 90vw;
+    }
+    .phone_nav_btn {
+        flex: 1;
+    }
     
   }
   
