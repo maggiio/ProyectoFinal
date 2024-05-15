@@ -41,13 +41,13 @@ nav {
     margin-top: 1.9vh;
 }
 
-ul {
+nav ul {
     margin-top: 3.7vh;
     padding-top: 6px;
     padding-bottom: 6px;
 }
 
-li {
+nav li {
     display: inline;
     padding: 10px;
     margin: 5px;
@@ -58,13 +58,6 @@ li {
 li:hover {
     color: black;
     text-decoration-line: underline;
-}
-
-li .login_btn {
-    padding: 5px;
-    background-color: rgb(138, 23, 23);
-    color: white;
-    border-radius: 10px;
 }
 
 #btn:hover #dropdown {
@@ -205,6 +198,29 @@ td h3 {
     padding: 2vw;
     margin-top: 5vh;
 }
+.small_box h2 {
+   margin-bottom: 5vh;
+}
+footer {
+    height: 30vh;
+    width: 100vw;
+    background-color: rgb(39, 37, 37);
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+.footer_block {
+    flex: 1;
+    color: white;
+}
+
+.footer_block ul {
+    margin: 4vw;
+}
+.footer_block ul li {
+    color: white;
+}
+
 
 
 /* ------------------------------------------------- Media query phone ----------------------------------- */
@@ -238,6 +254,73 @@ td h3 {
     .phone_nav_btn {
         flex: 1;
     }
-    
+    .small_box {
+        width: 90vw;
+        height: 80vh;
+        flex: 1;
+        background-color: white;
+        padding: 2vw;
+        margin-top: 5vh;
+    }
+
+    .footer_block {
+        flex: 1;
+        color: white;
+        overflow: hidden;
+    }
+
+    .footer_block ul {
+        margin: 4vw;
+    }
+    .footer_block ul li {
+        color: white;
+    }
+
+    #section_1 {
+        height: 130vh;
+        width: 100vw;
+    }
+    #users {
+        width: 80vw;
+        height: 60vh;
+        background-color: rgba(0, 0, 0, 0.804);
+        border-radius: 10px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        overflow-y: hidden;
+    }
+    td {
+        width: 20vw;
+        height: 6.4vh;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+    }
+    td p {
+        color: white;
+        font-size: 10pt;
+    }
+    td h2 {
+        color: white;
+    }
+    td h3 {
+        color: white;
+        font-size: 10pt;
+    }
+    .section1_text {
+        margin-top: 5vh;
+        margin-left: 10vw;
+        margin-bottom: 5vh;
+        width: 80vw;
+    }
+    .section1_h3 {
+        margin-left: 10vw;
+    }
+    #section_1 h2 {
+        font-size: 25pt;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 10vw;
+    }
   }
   
